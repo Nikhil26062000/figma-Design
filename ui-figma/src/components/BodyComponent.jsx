@@ -3,13 +3,10 @@ import slide2 from "../assets/slide2.png";
 import slide3 from "../assets/slide3.png";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import Breadcrumb from "./Breadcrumb";
+import Container from "./Container";
 
 const BodyComponent = () => {
-  const blueWidth = Math.min(100, 75);
-  const blackWidth = Math.max(100 - 75, 0);
-
-  const blueWidth2 = Math.min(100, 50);
-  const blackWidth2 = Math.max(100 - 50, 0);
+ 
 
   const breadcrumbItems = [
     { name: "Home", link: "#" },
@@ -56,106 +53,12 @@ const BodyComponent = () => {
 
       {/* -------------------------1st Rectangular box --------------------------------------- */}
       <div className="absolute w-[738px] h-[209px] top-[160px] left-[109.84px] bg-[#18191A] rounded-md">
-        <div className="flex text-[#E5E6EB]">
-          {/* Images */}
-          <div className="h-[209px]">
-            <img
-              src={slide3}
-              alt="random pic"
-              className="w-[100%] h-[100%] p-4"
-            />
-          </div>
-          {/* Informations */}
-          <div className="p-4">
-            <p className="text-[22px] leading-[26.63px]">Ocean Villa</p>
-            <p className="pb-4 text-[16px] leading-[19.36px] mb-2">
-              Luxury place
-            </p>
-            {/* progress bar */}
-            <div className="progress-container">
-              <div className="progress-bar">
-                <div
-                  className="blue-segment"
-                  style={{ width: `${blueWidth}%` }}
-                ></div>
-                <div
-                  className="black-segment"
-                  style={{ width: `${blackWidth}%` }}
-                ></div>
-              </div>
-            </div>
-            <p className="text-[14px] leading-[16.94px] text-[#B1B3B8] py-2">
-              You are 75% done with your listing
-            </p>
-
-            <button className="w-[149px] h-[40px] p-2 rounded-[6px] text-[#E5E6EB] border-2 border-[#d0d1d2] bg-[#242526] !mt-5 text-[16px] leading-[19.36px] ">
-              Finish the listing
-            </button>
-          </div>
-          {/* Three dot icon */}
-          <div
-            className="w-[40px] h-[40px] mt-4 rounded-[1.5px] bg-[#242526] flex justify-center items-center "
-            style={{
-              backgroundColor: "#242526",
-              filter:
-                "drop-shadow(-2px -2px 6px #444A53) drop-shadow(3px 3px 12px #000000)",
-            }}
-          >
-            <MoreHorizIcon />
-          </div>
-        </div>
+        <Container image={slide3} blueWidth="75" blackWidth="25" />
       </div>
 
       {/* ----------------------------------- 2nd Rectangular Box ----------------------------------*/}
       <div className="absolute w-[738px] h-[209px] top-[393px] left-[109.84px] bg-[#18191a] rounded-md">
-        <div className="flex text-white">
-          {/* Images */}
-          <div className="h-[209px]">
-            <img
-              src={slide2}
-              alt="random pic"
-              className="w-[100%] h-[100%] p-4"
-            />
-          </div>
-          {/* Informations */}
-          <div className="p-4">
-            <p className="text-[22px] leading-[26.63px]">Boho Villa</p>
-            <p className="pb-4 text-[16px] leading-[19.36px] mb-2">
-              Luxury place
-            </p>
-            {/* progress bar */}
-            <div className="progress-container">
-              <div className="progress-bar">
-                <div
-                  className="blue-segment"
-                  style={{ width: `${blueWidth2}%` }}
-                ></div>
-                <div
-                  className="black-segment"
-                  style={{ width: `${blackWidth2}%` }}
-                ></div>
-              </div>
-            </div>
-            <p className="text-[14px] leading-[16.98px] text-[#B1B3B8] py-2">
-              You are 50% done with your listing
-            </p>
-
-            <button className="w-[149px] h-[40px] p-2 rounded-[6px] text-[#E5E6EB] border-2 border-[#d0d1d2] bg-[#242526] !mt-5 text-[16px] leading-[19.36px]">
-              Finish the listing
-            </button>
-          </div>
-          {/* Three dot icon */}
-          <div
-            className="w-[40px] h-[40px] mt-4 rounded-[1.5px] bg-[#242526] flex justify-center items-center "
-            style={{
-              backgroundColor: "#242526",
-              filter:
-                "drop-shadow(-2px -2px 6px #444A53) drop-shadow(3px 3px 12px #000000)",
-            }}
-          >
-            <MoreHorizIcon className="text-[#B1B3B8]" />
-          </div>
-        </div>
+        <Container image={slide2} blueWidth="50" blackWidth="50" />
       </div>
     </div>
   );
