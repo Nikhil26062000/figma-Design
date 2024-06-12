@@ -53,12 +53,12 @@ const BodyComponent = () => {
 
       {/* -------------------------1st Rectangular box --------------------------------------- */}
       <div className="absolute w-[738px] h-[209px] top-[160px] left-[109.84px] bg-[#18191A] rounded-md">
-        <Container image={slide3} blueWidth="75" blackWidth="25" />
+        <Container image={slide3} blueWidth="75" blackWidth="25" name="Ocean Villa"/>
       </div>
 
       {/* ----------------------------------- 2nd Rectangular Box ----------------------------------*/}
       <div className="absolute w-[738px] h-[209px] top-[393px] left-[109.84px] bg-[#18191a] rounded-md">
-        <Container image={slide2} blueWidth="50" blackWidth="50" />
+        <Container image={slide2} blueWidth="50" blackWidth="50" name="Boho Villa"/>
       </div>
     </div>
   );

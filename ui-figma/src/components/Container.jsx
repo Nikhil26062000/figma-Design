@@ -1,7 +1,7 @@
 import React from 'react'
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 
-const Container = ({image,blueWidth,blackWidth}) => {
+const Container = ({image,blueWidth,blackWidth,name}) => {
   return (
     <div>
         <div className="flex text-[#E5E6EB]">
@@ -15,8 +15,8 @@ const Container = ({image,blueWidth,blackWidth}) => {
           </div>
           {/* Informations */}
           <div className="p-4">
-            <p className="text-[22px] leading-[26.63px]">Ocean Villa</p>
-            <p className="pb-4 text-[16px] leading-[19.36px] mb-2">
+            <p className="text-[22px] leading-[26.63px] font-semibold">{name}</p>
+            <p className="pb-4 text-[16px] leading-[19.36px] mb-2 font-normal">
               Luxury place
             </p>
             {/* progress bar */}
@@ -42,7 +42,7 @@ const Container = ({image,blueWidth,blackWidth}) => {
           </div>
           {/* Three dot icon */}
           <div
-            className="w-[40px] h-[40px] mt-4 rounded-[1.5px] bg-[#242526] flex justify-center items-center "
+            className="w-[40px] h-[40px] mt-4 rounded-[1.5px] bg-[#242526] flex justify-center items-center cursor-pointer "
             style={{
               backgroundColor: "#242526",
               filter:
