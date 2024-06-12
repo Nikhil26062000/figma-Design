@@ -24,14 +24,14 @@ const BodyComponent = () => {
       </div>
       {/* ------------------------------------- Buttons -------------------------------------------*/}
       <div
-        className="w-[314px] h-[48px] py-[4px] px-[24px] absolute top-[83px] left-[109.84px] rounded-[40px] flex justify-center items-center"
+        className="w-[314px] h-[48px] py-[4px] px-[24px] absolute top-[83px] left-[109.84px] rounded-[40px] flex justify-center items-center gap-[16px]"
         style={{
           backgroundColor: "#242526",
           filter:
             "drop-shadow(-2px -2px 6px #444A53) drop-shadow(4px 4px 12px #000000)",
         }}
       >
-        <button className="hover:bg-slate-500 text-[16px] leading-[19.36px] text-white w-[107.38px] rounded-[40px] p-1">
+        <button className="hover:bg-slate-500 text-[16px] leading-[19.36px] text-[#E5E6EB] w-[107.38px] rounded-[40px] p-1">
           Your listing
         </button>
 
@@ -39,12 +39,12 @@ const BodyComponent = () => {
           style={{
             boxShadow:
               "2px 2px 6px 0px #000000 inset, -1px -1px 3px 0px #444A53 inset", // Combined shadow styles
-            background: "#181919",
-            borderRadius: "20px",
+            background: "#18191A",
+            borderRadius: "40px",
           }}
         >
           <button
-            className="hover:bg-slate-500 text-[16px] leading-[19.36px] text-white w-[123.68px] rounded-[40px] p-[10px]"
+            className="hover:bg-slate-500 text-[16px] leading-[19.36px] text-[#E5E6EB] w-[123.68px] rounded-[40px] p-[10px]"
             style={{
               boxShadow: "-2px -2px 6px 0px #444A53, 4px 4px 4px 0px #00000040", // Combined shadow styles
             }}
@@ -55,8 +55,8 @@ const BodyComponent = () => {
       </div>
 
       {/* -------------------------1st Rectangular box --------------------------------------- */}
-      <div className="absolute w-[738px] h-[209px] top-[160px] left-[109.84px] bg-[#18191a] rounded-md">
-        <div className="flex text-white">
+      <div className="absolute w-[738px] h-[209px] top-[160px] left-[109.84px] bg-[#18191A] rounded-md">
+        <div className="flex text-[#E5E6EB]">
           {/* Images */}
           <div className="h-[209px]">
             <img
@@ -84,17 +84,17 @@ const BodyComponent = () => {
                 ></div>
               </div>
             </div>
-            <p className="text-[14px] leading-[16.98px] text-[#B1B3B8] py-2">
+            <p className="text-[14px] leading-[16.94px] text-[#B1B3B8] py-2">
               You are 75% done with your listing
             </p>
 
-            <button className="w-[149px] h-[40px] p-2 rounded-sm text-[#FFFFFF] border-2 border-[#d0d1d2] bg-[#242526] !mt-5">
+            <button className="w-[149px] h-[40px] p-2 rounded-[6px] text-[#E5E6EB] border-2 border-[#d0d1d2] bg-[#242526] !mt-5 text-[16px] leading-[19.36px] ">
               Finish the listing
             </button>
           </div>
           {/* Three dot icon */}
           <div
-            className="w-[40px] h-[40px] mt-4 rounded-sm bg-[242526] flex justify-center items-center "
+            className="w-[40px] h-[40px] mt-4 rounded-[1.5px] bg-[#242526] flex justify-center items-center "
             style={{
               backgroundColor: "#242526",
               filter:
@@ -140,20 +140,20 @@ const BodyComponent = () => {
               You are 50% done with your listing
             </p>
 
-            <button className="w-[149px] h-[40px] p-2 rounded-sm text-[#FFFFFF] border-2 border-[#d0d1d2] bg-[#242526] !mt-5">
+            <button className="w-[149px] h-[40px] p-2 rounded-[6px] text-[#E5E6EB] border-2 border-[#d0d1d2] bg-[#242526] !mt-5 text-[16px] leading-[19.36px]">
               Finish the listing
             </button>
           </div>
           {/* Three dot icon */}
           <div
-            className="w-[40px] h-[40px] mt-4 rounded-sm bg-[242526] flex justify-center items-center "
+            className="w-[40px] h-[40px] mt-4 rounded-[1.5px] bg-[#242526] flex justify-center items-center "
             style={{
               backgroundColor: "#242526",
               filter:
                 "drop-shadow(-2px -2px 6px #444A53) drop-shadow(3px 3px 12px #000000)",
             }}
           >
-            <MoreHorizIcon />
+            <MoreHorizIcon className="text-[#B1B3B8]" />
           </div>
         </div>
       </div>
